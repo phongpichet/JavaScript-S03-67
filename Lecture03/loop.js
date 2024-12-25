@@ -3,8 +3,8 @@ const name =['Justin','Sarah','Christopher'];
 //while loop
 console.log('-- while --');
 let index = 0;
-while (index < name.length){
-    const name = name[index];
+while (index < names.length){
+    const name = names[index];
     console.log(name);
     index++;
 }
