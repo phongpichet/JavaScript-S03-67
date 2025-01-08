@@ -5,7 +5,7 @@ class Song {
     }
 
     play(){
-        console.log("Song playing");
+        console.log("Song playing!");
     }
 }
 
