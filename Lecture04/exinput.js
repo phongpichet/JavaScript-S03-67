@@ -18,6 +18,6 @@ rl.question('Enter your name: ',(name) => {
             console.log(`${name},your BMI is ${bmi.toFixed}`);
 
             rl.class();
-        })
-    })
-})
+        });
+    });
+});
