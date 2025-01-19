@@ -1,7 +1,7 @@
-const names = ['Table','Chairs','Couch'];
+let furniture = ['Table', 'Chairs', 'Couch'];
 
-while (true){
-    let result = interator.next();
-    if (result.done) break;
-    console.log(result.value);
+for (let item of furniture) {
+  for (let letter of item) {
+    console.log(letter);
+  }
 }
