@@ -3,18 +3,19 @@ function secretWord(str, length) {
     const tripletValue = triplet => {
         return triplet.split('').reduce((sum, char) => sum + (char.charCodeAt(0) - 96), 0);
     };
-
+    console.log(tripletValue);
     // Generate all possible triplets and their positions
     const triplets = [];
     for (let i = 0; i <= str.length - 3; i++) {
         triplets.push({ triplet: str.substring(i, i + 3), index: i + 1 });
     }
-
+    console.log(triplets);
     // Try to find the secret word
     for (let start = 0; start < triplets.length; start++) {
         let sequence = [tripletValue(triplets[start].triplet)];
+        console.log(sequence);
         let secret = triplets[start].triplet[1];
-
+        console.log(secret);
         for (let i = start + 1; i < triplets.length && sequence.length < length; i++) {
             let nextValue = tripletValue(triplets[i].triplet);
 
